@@ -1,0 +1,12 @@
+<h1>PKs in the Community</h2>
+<div>
+<ul>
+  <% @pks.each do |pk| %>
+    <li>Battle occured at <%= pk.created_at %></li>
+    <li>Winner was <%= pk.winner %></li>
+    <p>Description:
+    	<%= pk.description %>
+    </p>
+  <% end %>
+</ul>
+</div>

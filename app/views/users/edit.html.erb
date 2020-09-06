@@ -1,0 +1,8 @@
+<%= simple_form_for @user do |f| %>
+  <h1>Update your profile</h1>
+  <%= f.input :age %>
+  <%= f.input :username %>
+  <%= f.input :weight %>
+  <%= f.button :submit, "Update date" %>
+  <%= link_to "Cancel", :back %>
+<% end %>

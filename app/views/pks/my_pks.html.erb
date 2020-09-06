@@ -1,0 +1,19 @@
+<h1>My PKs</h2>
+<div>
+<ul>
+  <% @pks_one.each do |pk| %>
+    <li>Battle occured at <%= pk.created_at %></li>
+    <li>Winner was <%= pk.winner %></li>
+    <p>Description:
+    	<%= pk.description %>
+    </p>
+  <% end %>
+   <% @pks_two.each do |pk| %>
+    <li>Battle occured at <%= pk.created_at %></li>
+    <li>Winner was <%= pk.winner %></li>
+    <p>Description:
+    	<%= pk.description %>
+    </p>
+  <% end %>
+</ul>
+</div>
